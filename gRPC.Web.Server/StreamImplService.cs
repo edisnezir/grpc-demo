@@ -1,5 +1,6 @@
 
 using Grpc.Core;
+using Microsoft.AspNetCore.Authorization;
 
 public class StreamImplService: StreamService.StreamServiceBase {
     

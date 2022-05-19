@@ -1,0 +1,9 @@
+<button (click)="startStream()">Start Stream</button>
+<button (click)="stopStream()">Stop Stream</button>
+
+<div>
+  Messages:
+  <ul>
+    <li *ngFor="let message of messages">{{message}}</li>
+  </ul>
+</div>
