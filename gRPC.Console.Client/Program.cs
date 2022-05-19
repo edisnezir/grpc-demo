@@ -37,11 +37,17 @@ async void StartGrpcStream() {
         HttpHandler = new GrpcWebHandler(GrpcWebMode.GrpcWeb, handler),
     });
 
+    Metadata metadata = new()
+    {
+        { "authorization", "Bearer " + "tokenString" },
+    };
+
 
     var client = new StreamServiceClient(channel);
 
     // You can set a deadline for your call by deadLine parameter.
     _call = client.FetchResponse(new Request() { Id= 1 },
+                                                 metadata,
                                                  deadline: DateTime.UtcNow.AddSeconds(10));
 
     _ = Task.Run(async () =>
