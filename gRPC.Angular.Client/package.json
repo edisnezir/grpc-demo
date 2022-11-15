@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@improbable-eng/grpc-web": "^0.15.0",
-    "google-protobuf": "^3.20.1",
+    "google-protobuf": "^3.21.2",
     "rxjs": "~7.5.0",
     "ts-protoc-gen": "^0.15.0",
     "tslib": "^2.3.0",
